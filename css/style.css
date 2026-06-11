@@ -1,0 +1,79 @@
+.sale-banner {
+    width: 500px;
+    padding: 30px;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    background-color: #6b2d3c;
+    
+
+    animation-name: bannerAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    
+    }
+    
+    @keyframes bannerAnimation {
+    from {
+    background-color: #6b2d3c;
+    opacity: 0.5;
+    }
+    
+    
+    to {
+        background-color: #b85c70;
+        opacity: 1;
+    }
+    
+    
+    }
+    
+    .book-box {
+    width: 120px;
+    height: 160px;
+    background-color: #f2d7d9;
+    border: 2px solid #6b2d3c;
+    margin: 30px 0;
+    transition: 1s;
+    }
+    
+    .book-box:hover {
+    transform: translateX(200px);
+    background-color: #b85c70;
+    }
+    
+    .loader {
+    width: 300px;
+    height: 25px;
+    border: 2px solid #6b2d3c;
+    }
+    
+    .loader-line {
+    width: 0;
+    height: 25px;
+    background-color: #6b2d3c;
+    
+    
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+    
+    }
+    
+    @keyframes loading {
+    from {
+    width: 0;
+    }
+    
+    
+    to {
+        width: 300px;
+    }
+    
+    
+    }
+    

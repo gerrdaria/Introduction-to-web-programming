@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+.filter {
+    width: 800px;
+    margin: 30px auto;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    width: 160px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #d6c3c8;
+    background-color: #f8f1f3;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: #ead3d9;
+}
+
+.books {
+    margin-top: 25px;
+}
+
+.book {
+    width: 220px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2d7d9;
+    border: 2px solid #6b2d3c;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.fantasy {
+    background-color: #e8dff5;
+}
+
+.detective {
+    background-color: #dcebf7;
+}
+
+.classic {
+    background-color: #f7e4d4;
+}
+
+#fantasy:checked ~ .books .detective,
+#fantasy:checked ~ .books .classic {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#detective:checked ~ .books .fantasy,
+#detective:checked ~ .books .classic {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#classic:checked ~ .books .fantasy,
+#classic:checked ~ .books .detective {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#all:checked ~ .books .book {
+    opacity: 1;
+}

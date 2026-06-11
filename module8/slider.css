@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #faf7f4;
+}
+
+h1 {
+    color: #4b1f2f;
+}
+
+a {
+    color: #4b1f2f;
+}
+
+/* Слайдер 1 — автоматический */
+.auto-slider {
+    width: 500px;
+    height: 350px;
+    margin: 30px auto;
+    overflow: hidden;
+    border: 2px solid #6b2d3c;
+}
+
+.auto-track {
+    width: 1500px;
+    display: flex;
+    animation: autoSlide 9s infinite;
+}
+
+.auto-track img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+}
+
+@keyframes autoSlide {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -500px;
+    }
+
+    65% {
+        margin-left: -500px;
+    }
+
+    70% {
+        margin-left: -1000px;
+    }
+
+    100% {
+        margin-left: -1000px;
+    }
+}
+
+/* Слайдер 2 — radio */
+.radio-slider {
+    width: 500px;
+    height: 380px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #6b2d3c;
+}
+
+.radio-slider input {
+    display: none;
+}
+
+.radio-track {
+    width: 1500px;
+    display: flex;
+    transition: 0.8s;
+}
+
+.radio-track img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+}
+
+#slide1:checked ~ .radio-track {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .radio-track {
+    margin-left: -500px;
+}
+
+#slide3:checked ~ .radio-track {
+    margin-left: -1000px;
+}
+
+.radio-nav {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.radio-nav label {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #d6c3c8;
+    cursor: pointer;
+}
+
+.radio-nav label:hover {
+    background-color: #6b2d3c;
+}
+
+/* Слайдер 3 — стрелки */
+.arrow-slider {
+    width: 500px;
+    height: 380px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #6b2d3c;
+}
+
+.arrow-slider input {
+    display: none;
+}
+
+.arrow-track {
+    width: 1500px;
+    display: flex;
+    transition: 0.8s;
+}
+
+.arrow-track img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+}
+
+#arrow1:checked ~ .arrow-track {
+    margin-left: 0;
+}
+
+#arrow2:checked ~ .arrow-track {
+    margin-left: -500px;
+}
+
+#arrow3:checked ~ .arrow-track {
+    margin-left: -1000px;
+}
+
+.arrows label {
+    display: none;
+    position: absolute;
+    top: 45%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #6b2d3c;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#arrow1:checked ~ .arrows .next2,
+#arrow2:checked ~ .arrows .next3,
+#arrow3:checked ~ .arrows .next1,
+#arrow1:checked ~ .arrows .prev3,
+#arrow2:checked ~ .arrows .prev1,
+#arrow3:checked ~ .arrows .prev2 {
+    display: block;
+}
