@@ -4,109 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <title>BookVerse</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <h1>BookVerse</h1>
+<header class="header">
+    <div class="logo">BookVerse</div>
 
-    <p>
-        Добро пожаловать в наш книжный магазин.
-    </p>
+    <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="filter.html">Жанры</a>
+        <a href="feedback.html">Обратная связь</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <div class="icons">
+        <span>⌕</span>
+        <span>♡</span>
+        <span>🛒</span>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="hero-subtitle">Книжный интернет-магазин</p>
+
+        <h1>
+            Откройте мир книг<br>
+            вместе с <span>BookVerse</span>
+        </h1>
+
+        <p class="hero-description">
+            Здесь вы найдете фэнтези, детективы, классику и научную фантастику.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="catalog.html" class="btn gold">Перейти в каталог</a>
+            <a href="module8/slider3.html" class="btn outline">Смотреть подборки</a>
+        </div>
+
+        <div class="features">
+            <div>
+                <b> Быстрая доставка</b>
+                <p>По всему городу</p>
+            </div>
+
+            <div>
+                <b>🛡 Оригинальные книги</b>
+                <p>Только проверенные издания</p>
+            </div>
+
+            <div>
+                <b>☆ Подборки</b>
+                <p>Для каждого читателя</p>
+            </div>
+        </div>
+    </div>
 
 
+</section>
 
-
+<section class="section">
     <h2>Популярные жанры</h2>
 
-<ul>
-    <li>Фэнтези</li>
-    <li>Детективы</li>
-    <li>Классическая литература</li>
-    <li>Научная фантастика</li>
-</ul>
+    <div class="genre-cards">
+        <div class="genre-card fantasy">
+            <h3>Фэнтези</h3>
+            <p>Погрузитесь в волшебные миры</p>
+        </div>
 
-<h2>Топ 3 популярных книг</h2>
+        <div class="genre-card detective">
+            <h3>Детективы</h3>
+            <p>Раскройте загадочные преступления</p>
+        </div>
 
-<ol>
-    <li>Гарри Поттер и философский камень</li>
-    <li>Властелин колец</li>
-    <li>Дюна</li>
-</ol>
+        <div class="genre-card classic">
+            <h3>Классика</h3>
+            <p>Вечные произведения</p>
+        </div>
 
-<h2>Каталог книг</h2>
+        <div class="genre-card sci-fi">
+            <h3>Фантастика</h3>
+            <p>Загляните в будущее</p>
+        </div>
+    </div>
+</section>
 
-<ul>
-    <li>
-        Фэнтези
-        <ul>
-            <li>Гарри Поттер</li>
-            <li>Властелин колец</li>
-        </ul>
-    </li>
+<section class="section light">
+    <div class="section-title">
+        
+        <h2>Новинки месяца</h2>
+        <p>Свежие поступления и долгожданные новинки</p>
+    </div>
 
-    <li>
-        Детективы
-        <ul>
-            <li>Шерлок Холмс</li>
-            <li>Убийство в Восточном экспрессе</li>
-        </ul>
-    </li>
-</ul>
+    <div class="book-grid">
+        <div class="book-card">
+            <div class="label">Новинка</div>
+            <img src="images/book1.jpg" alt="Гарри Поттер">
+            <div class="book-info">
+                <h3>Гарри Поттер</h3>
+                <p class="category">Фэнтези</p>
+                <p>Культовая серия о юном волшебнике.</p>
+                <div class="price-row">
+                    <b>30 490 ₸</b>
+                    <button>В корзину</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="label">Новинка</div>
+            <img src="images/book2.jpg" alt="Властелин колец">
+            <div class="book-info">
+                <h3>Властелин колец</h3>
+                <p class="category">Фэнтези</p>
+                <p>Эпическая сага о Средиземье.</p>
+                <div class="price-row">
+                    <b>45 990 ₸</b>
+                    <button>В корзину</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="label">Новинка</div>
+            <img src="images/book3.jpg" alt="Дюна">
+            <div class="book-info">
+                <h3>Набор классики</h3>
+                <p class="category">Классика</p>
+                <p>Классические прозведение в издание яркие старницы.</p>
+                <div class="price-row">
+                    <b>20 290 ₸</b>
+                    <button>В корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sale">
+        <div>
+            <h2>Скидки на книги до 20%</h2>
+            <p>Специальные предложения на избранные книги</p>
+        </div>
+
+        <a href="catalog.html">Перейти к акциям →</a>
+    </div>
+</section>
 
 
-    <p>
-        Здесь вы найдете книги различных направлений.
-    </p>
 
-    <h3>Фэнтези</h3>
+<footer class="footer">
+    <h3>BookVerse</h3>
+    <p>© 2026 Книжный интернет-магазин</p>
+</footer>
 
-    <p>
-        Увлекательные истории о магии и приключениях.
-    </p>
-
-    <h4>Популярные авторы фэнтези</h4>
-
-    <p>
-        Джоан Роулинг, Джон Толкин, Джордж Мартин.
-    </p>
-
-    <h5>Новинки месяца</h5>
-
-    <p>
-        Новые поступления книг уже доступны в каталоге.
-    </p>
-
-    <h6>BookVerse 2026</h6>
-
-<h2>Навигация</h2>
-
-<!-- Главное меню сайта -->
-
-<a href="catalog.html" style="color: blue;">Каталог книг</a>
-
-<br>
-
-<a href="contacts.html" style="color: blue;">Контакты</a>
-
-<br>
-<a href="media.html" style="color: blue;">Аудио и видео</a>
-
-<br>
-<a href="filter.html" style="color: blue;">Фильтрация книг</a>
-
-<br>
-<a href="filter-select.html" style="color: blue;">
-Фильтрация через список
-
-<br>
-<a href="module8/slider1.html" style="color: blue;">Автоматический слайдер</a>
-
-<br>
-<a href="module8/slider2.html" style="color: blue;">Слайдер на radio-кнопках</a>
-
-<br>
-<a href="module8/slider3.html" style="color: blue;">Слайдер со стрелками</a>
-</a>
 </body>
+
 </html>

@@ -4,16 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог книг</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<header class="header">
+    <div class="logo">BookVerse</div>
+    <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="filter.html">Жанры</a>
+        <a href="feedback.html">Обратная связь</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <div class="icons">
+        <span>⌕</span>
+        <span>♡</span>
+        <span>🛒</span>
+    </div>
+</header>
+
+<section class="catalog-hero">
     <h1>Каталог книг</h1>
+    <p>Найдите свою следующую любимую книгу</p>
+</section>
 
-    <p>Здесь будет каталог нашего магазина.</p>
+<main class="catalog-page">
 
-    <a href="index.html">Вернуться на главную</a>
+    <aside class="filters">
+        <h3>Жанры</h3>
+    
+        <label>
+            <input type="checkbox" class="genre-filter" value="fantasy">
+            Фэнтези
+        </label>
+    
+        <label>
+            <input type="checkbox" class="genre-filter" value="detective">
+            Детективы
+        </label>
+    
+        <label>
+            <input type="checkbox" class="genre-filter" value="classic">
+            Классика
+        </label>
+    
+        <label>
+            <input type="checkbox" class="genre-filter" value="scifi">
+            Фантастика
+        </label>
+    
+        <h3>Цена</h3>
+    
+        <div class="price-values">
+            <span>0 ₸</span>
+            <span id="priceValue">100000 ₸</span>
+        </div>
+    
+        <input type="range" id="priceFilter" min="0" max="100000" value="100000">
+    
+        <button class="filter-btn" id="applyFilters">Применить фильтры</button>
+    
+        <p class="reset" id="resetFilters">Сбросить всё</p>
+    </aside>
 
+    <section class="catalog-content">
+
+        <div class="catalog-top">
+            <p>Найдено книг: 10</p>
+
+            <select>
+                <option>Популярные</option>
+                <option>Сначала дешевые</option>
+                <option>Сначала дорогие</option>
+            </select>
+        </div>
+
+        <div class="catalog-grid">
+
+            <div class="catalog-card" data-genre="fantasy" data-price="30490">
+                <img src="images/book1.jpg" alt="Гарри Поттер">
+                <h3>Гарри Поттер</h3>
+                <p>Дж. К. Роулинг</p>
+                <span>Фэнтези</span>
+                <b>30 490 ₸</b>
+                <button>🛒</button>
+            </div>
+
+            <div class="catalog-card" data-genre="fantasy" data-price="45990">
+                <img src="images/book2.jpg" alt="Властелин колец">
+                <h3>Властелин колец</h3>
+                <p>Дж. Р. Р. Толкин</p>
+                <span>Фэнтези</span>
+                <b>45 990 ₸</b>
+                <button>🛒</button>
+            </div>
+
+            <div class="catalog-card" data-genre="scifi" data-price="7696">
+                <img src="images/book3.jpg" alt="Дюна">
+                <h3>Дюна</h3>
+                <p>Фрэнк Герберт</p>
+                <span>Фантастика</span>
+                <b>7 696 ₸</b>
+                <button>🛒</button>
+            </div>
+
+            <div class="catalog-card" data-genre="classic" data-price="2990">
+                <img src="images/book4.jpg" alt="1984">
+                <h3>1984</h3>
+                <p>Джордж Оруэлл</p>
+                <span>Классика</span>
+                <b>2 990 ₸</b>
+                <button>🛒</button>
+            </div>
+
+            <div class="catalog-card" data-genre="detective" data-price="4668">
+                <img src="images/book5.jpg" alt="Убийство в Восточном экспрессе">
+                <h3>Убийство в Восточном экспрессе</h3>
+                <p>Агата Кристи</p>
+                <span>Детективы</span>
+                <b>4 668 ₸</b>
+                <button>🛒</button>
+            </div>
+
+            <div class="catalog-card" data-genre="classic" data-price="3190">
+                <img src="images/margarita.jpg" alt="Мастер и Маргарита">
+                <h3>Мастер и Маргарита</h3>
+                <p>Михаил Булгаков</p>
+                <span>Классика</span>
+                <b>3 190 ₸</b>
+                <button>🛒</button>
+            </div>
+
+            <div class="catalog-card" data-genre="scifi" data-price="5901">
+                <img src="images/maria.jpg" alt="Проект «Аве Мария»">
+                <h3>Проект «Аве Мария»</h3>
+                <p>Энди Вейер</p>
+                <span>Фантастика</span>
+                <b>5 901 ₸</b>
+                <button>🛒</button>
+            </div>
+
+            <div class="catalog-card" data-genre="fantasy" data-price="3090">
+                <img src="images/book6.jpg" alt="Хоббит">
+                <h3>Хоббит</h3>
+                <p>Дж. Р. Р. Толкин</p>
+                <span>Фэнтези</span>
+                <b>3 090 ₸</b>
+                <button>🛒</button>
+            </div>
+
+            <div class="catalog-card" data-genre="classic" data-price="2490">
+                <img src="images/book7.jpg" alt="Гордость и предубеждение">
+                <h3>Гордость и предубеждение</h3>
+                <p>Джейн Остен</p>
+                <span>Классика</span>
+                <b>2 490 ₸</b>
+                <button>🛒</button>
+            </div>
+
+            <div class="catalog-card" data-genre="scifi" data-price="3390">
+                <img src="images/book8.jpg" alt="Марсианин">
+                <h3>Марсианин</h3>
+                <p>Энди Вейр</p>
+                <span>Фантастика</span>
+                <b>3 390 ₸</b>
+                <button>🛒</button>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+<script src="js/catalog.js"></script>
 </body>
+
 
 </html>

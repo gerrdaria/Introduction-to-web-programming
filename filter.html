@@ -3,45 +3,119 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Фильтрация книг</title>
+    <title>Литературные жанры</title>
 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/filter.css">
 </head>
 
 <body>
 
-    <h1>Фильтрация книг по жанру</h1>
+<header class="header">
+    <div class="logo">BookVerse</div>
 
-    <div class="filter">
+    <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="filter.html">Жанры</a>
+        <a href="feedback.html">Обратная связь</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+</header>
 
-        <input type="radio" id="all" name="genre" checked>
-        <label for="all">Все</label>
+<section class="genre-dark-page">
 
-        <input type="radio" id="fantasy" name="genre">
-        <label for="fantasy">Фэнтези</label>
+    <h1>Литературные жанры</h1>
 
-        <input type="radio" id="detective" name="genre">
-        <label for="detective">Детективы</label>
+    <div class="genre-list">
 
-        <input type="radio" id="classic" name="genre">
-        <label for="classic">Классика</label>
+        <details class="dark-genre fantasy-genre" open>
+            <summary>
+                <span class="genre-icon">♛</span>
 
-        <div class="books">
-            <div class="book fantasy">Гарри Поттер</div>
-            <div class="book fantasy">Властелин колец</div>
+                <div>
+                    <h2>Фэнтези</h2>
+                    <p>Фэнтези — жанр, основанный на магии, мифологических существах и вымышленных мирах.</p>
+                </div>
+            </summary>
 
-            <div class="book detective">Шерлок Холмс</div>
-            <div class="book detective">Убийство в Восточном экспрессе</div>
+            <div class="genre-content">
+                <b>Популярные книги:</b>
 
-            <div class="book classic">Война и мир</div>
-            <div class="book classic">Преступление и наказание</div>
-        </div>
+                <ul>
+                    <li>Гарри Поттер</li>
+                    <li>Властелин колец</li>
+                    <li>Хоббит</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="dark-genre detective-genre">
+            <summary>
+                <span class="genre-icon">🔎</span>
+
+                <div>
+                    <h2>Детективы</h2>
+                    <p>Детективные произведения строятся вокруг расследования преступлений и поиска виновного.</p>
+                </div>
+            </summary>
+
+            <div class="genre-content">
+                <b>Популярные книги:</b>
+
+                <ul>
+                    <li>Шерлок Холмс</li>
+                    <li>Убийство в Восточном экспрессе</li>
+                    <li>Десять негритят</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="dark-genre classic-genre">
+            <summary>
+                <span class="genre-icon">🏛</span>
+
+                <div>
+                    <h2>Классика</h2>
+                    <p>Классическая литература — произведения, проверенные временем.</p>
+                </div>
+            </summary>
+
+            <div class="genre-content">
+                <b>Популярные книги:</b>
+
+                <ul>
+                    <li>Гордость и предубеждение</li>
+                    <li>Преступление и наказание</li>
+                    <li>Анна Каренина</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="dark-genre scifi-genre">
+            <summary>
+                <span class="genre-icon">🚀</span>
+
+                <div>
+                    <h2>Научная фантастика</h2>
+                    <p>Истории о будущем, космосе, технологиях и открытиях.</p>
+                </div>
+            </summary>
+
+            <div class="genre-content">
+                <b>Популярные книги:</b>
+
+                <ul>
+                    <li>Дюна</li>
+                    <li>Марсианин</li>
+                    <li>Проект "Аве Мария"</li>
+                </ul>
+            </div>
+        </details>
 
     </div>
 
-    <p>
-        <a href="index.html">Вернуться на главную</a>
-    </p>
+</section>
 
 </body>
 

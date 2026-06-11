@@ -1,0 +1,137 @@
+.header {
+    height: 90px;
+    padding: 0 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fffdf8;
+    border-bottom: 1px solid #e5dfd3;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #17351f;
+}
+
+.menu {
+    display: flex;
+    gap: 55px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #d7b866;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.contacts-hero {
+    min-height: calc(100vh - 90px);
+    padding: 55px 70px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(1, 18, 10, 0.98) 0%,
+            rgba(2, 27, 15, 0.92) 25%,
+            rgba(3, 30, 18, 0.75) 50%,
+            rgba(3, 30, 18, 0.20) 100%
+        ),
+        url("../images/contact-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.contacts-content {
+    width: 520px;
+    color: #f4ead7;
+}
+
+.contacts-logo {
+    margin-bottom: 85px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    color: #f4ead7;
+}
+
+.contacts-content h1 {
+    color: #d0a35a;
+}
+
+.contact-icon {
+    color: #d0a35a;
+    border: 1px solid rgba(208, 163, 90, 0.6);
+}
+
+.decor-line {
+    background: linear-gradient(
+        90deg,
+        rgba(208,163,90,0.9),
+        rgba(208,163,90,0.1)
+    );
+}
+
+.contacts-text {
+    margin-bottom: 38px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.55;
+
+    color: #f4ead7;
+}
+
+.contact-row {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+
+    margin-bottom: 26px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+
+    color: #f4ead7;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(199, 154, 72, 0.6);
+    border-radius: 50%;
+
+    color: #c79a48;
+    background-color: rgba(4, 30, 17, 0.45);
+}
+
+.contact-row div:last-child {
+    padding-left: 20px;
+    border-left: 1px solid rgba(199, 154, 72, 0.3);
+}

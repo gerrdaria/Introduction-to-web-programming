@@ -1,78 +1,106 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
     <meta charset="UTF-8">
     <title>Обратная связь</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<header class="header">
+    <div class="logo">BookVerse</div>
 
-<h1>Обратная связь</h1>
+    <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="filter.html">Жанры</a>
+        <a href="feedback.html">Обратная связь</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
 
-<p>Пожалуйста, заполните форму.</p>
+    <div class="icons">
+        <span>⌕</span>
+        <span>♡</span>
+        <span>🛒</span>
+    </div>
+</header>
 
-<form>
+<section class="feedback-hero">
+    <h1>Обратная связь</h1>
+    <p>Оставьте сообщение, отзыв или пожелание для книжного магазина BookVerse</p>
+</section>
 
-    <p>Ваше имя:</p>
-    <input type="text" name="name">
+<main class="feedback-page">
 
-    <p>Ваш возраст:</p>
-    <input type="number" name="age">
+    <section class="feedback-card">
+        <div class="feedback-info">
+            <p class="hero-subtitle">Связь с нами</p>
+            <h2>Поможем подобрать книгу</h2>
+            <p>
+                Заполните форму, укажите любимые жанры и напишите сообщение.
+                Мы учтем ваши пожелания и поможем выбрать подходящую книгу.
+            </p>
 
-    <p>Любимый жанр:</p>
-    <select name="genre">
-        <option>Фэнтези</option>
-        <option>Детектив</option>
-        <option>Классика</option>
-        <option>Научная фантастика</option>
-    </select>
+            <div class="contact-mini">
+                <p><b>⌖ Адрес:</b> Алматы, ул. Сатпаева, 150</p>
+                <p><b>✉ Email:</b> book@gmail.com</p>
+                <p><b>☎ Телефон:</b> +7 707 158 03 00</p>
+            </div>
+        </div>
 
-    <p>Какие жанры вы читаете?</p>
+        <form class="feedback-form">
 
-    <input type="checkbox" name="fantasy">
-    <label>Фэнтези</label>
-    <br>
+            <label>Ваше имя</label>
+            <input type="text" name="name" placeholder="Введите имя">
 
-    <input type="checkbox" name="detective">
-    <label>Детективы</label>
-    <br>
+            <label>Ваш возраст</label>
+            <input type="number" name="age" placeholder="Введите возраст">
 
-    <input type="checkbox" name="classic">
-    <label>Классика</label>
-    <br>
+            <label>Любимый жанр</label>
+            <select name="genre">
+                <option>Фэнтези</option>
+                <option>Детектив</option>
+                <option>Классика</option>
+                <option>Научная фантастика</option>
+            </select>
 
-    <input type="checkbox" name="science">
-    <label>Научная фантастика</label>
+            <div class="form-group">
+                <p>Какие жанры вы читаете?</p>
 
-    <p>Читаете ли вы электронные книги?</p>
+                <label class="check"><input type="checkbox" name="fantasy"> Фэнтези</label>
+                <label class="check"><input type="checkbox" name="detective"> Детективы</label>
+                <label class="check"><input type="checkbox" name="classic"> Классика</label>
+                <label class="check"><input type="checkbox" name="science"> Научная фантастика</label>
+            </div>
 
-    <input type="radio" name="ebook" value="yes">
-    <label>Да</label>
+            <div class="form-group">
+                <p>Читаете ли вы электронные книги?</p>
 
-    <input type="radio" name="ebook" value="no">
-    <label>Нет</label>
+                <label class="check"><input type="radio" name="ebook" value="yes"> Да</label>
+                <label class="check"><input type="radio" name="ebook" value="no"> Нет</label>
+            </div>
 
-    <p>Подписаться на новости магазина:</p>
+            <label class="check news">
+                <input type="checkbox" name="news">
+                Подписаться на новости магазина
+            </label>
 
-    <input type="checkbox" name="news">
+            <label>Ваше сообщение</label>
+            <textarea name="message" rows="5" placeholder="Напишите сообщение"></textarea>
 
-    <p>Ваше сообщение:</p>
+            <button type="submit">Отправить сообщение</button>
 
-    <textarea name="message" rows="5" cols="40"></textarea>
+        </form>
+    </section>
 
-    <br><br>
+</main>
 
-    <input type="submit" value="Отправить">
-
-</form>
-
-<p>
-    <a href="index.html">Вернуться на главную</a>
-</p>
-
+<footer class="footer">
+    <h3>BookVerse</h3>
+    <p>© 2026 Книжный интернет-магазин</p>
+</footer>
 
 </body>
 

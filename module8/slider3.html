@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <title>Слайдер со стрелками</title>
+    <title>Подборка книг</title>
     <link rel="stylesheet" href="slider.css">
 </head>
 
 <body>
 
-    <h1>Слайдер книг со стрелками</h1>
+    <h1>Подборка книг</h1>
 
     <div class="arrow-slider">
 
@@ -18,19 +18,47 @@
         <input type="radio" name="arrow" id="arrow3">
 
         <div class="arrow-track">
-            <img src="../images/book1.jpg" alt="Книга 1">
-            <img src="../images/book2.jpg" alt="Книга 2">
-            <img src="../images/book3.jpg" alt="Книга 3">
+
+            <div class="slide-card">
+                <img src="../images/harry.jpg" alt="Гарри Поттер">
+                <div class="book-info">
+                    <h2>Гарри Поттер</h2>
+                    <p>Фэнтези</p>
+                    <span>22 490 ₸</span>
+                    <button>В корзину</button>
+                </div>
+            </div>
+
+            <div class="slide-card">
+                <img src="../images/maria.jpg" alt="Властелин колец">
+                <div class="book-info">
+                    <h2>Проект «Аве Мария»</h2>
+                    <p>Научная фантастика</p>
+                    <span>4 990 ₸</span>
+                    <button>В корзину</button>
+                </div>
+            </div>
+
+            <div class="slide-card">
+                <img src="../images/margarita.jpg" alt="Мастер и Маргарита">
+                <div class="book-info">
+                    <h2>Мастей и Маргарита</h2>
+                    <p>Классика</p>
+                    <span>4 290 ₸</span>
+                    <button>В корзину</button>
+                </div>
+            </div>
+
         </div>
 
         <div class="arrows">
-            <label for="arrow1" class="prev prev1">←</label>
+            <label for="arrow3" class="prev prev3">←</label>
             <label for="arrow2" class="next next2">→</label>
 
-            <label for="arrow2" class="prev prev2">←</label>
+            <label for="arrow1" class="prev prev1">←</label>
             <label for="arrow3" class="next next3">→</label>
 
-            <label for="arrow3" class="prev prev3">←</label>
+            <label for="arrow2" class="prev prev2">←</label>
             <label for="arrow1" class="next next1">→</label>
         </div>
 
